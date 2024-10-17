@@ -18,6 +18,7 @@ nav
 {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 nav div {
@@ -28,9 +29,11 @@ nav div {
 }
 
 main {
+    height: auto;
     padding-top: 30px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 main section article
@@ -42,11 +45,27 @@ main section article p {
     padding: 10px;
 }
 
-main section {
+#example_images {
     width: 50%;
     height: auto;
     display: grid;
     grid-template-columns: auto auto auto;
+}
+
+#contact_form_section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+#contact_form_section p {
+    margin: 3px;
+}
+
+#contact_form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
 .main_image {
